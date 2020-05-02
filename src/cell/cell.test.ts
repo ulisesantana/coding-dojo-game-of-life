@@ -1,14 +1,9 @@
-import { Cell, generateCoordinate } from "./cell";
+import { Cell } from "./cell";
 
-describe("Cell should", () => {
+xdescribe("Cell should", () => {
   it("be alive by default", () => {
     const cell = new Cell();
     expect(cell.isAlive()).toBe(true);
-  });
-
-  it("know its own position", () => {
-    const cell = new Cell(generateCoordinate(1, 1));
-    expect(cell.getPosition()).toStrictEqual({ x: 1, y: 1 });
   });
 
   xit("know the number of beside neighbours", () => {
